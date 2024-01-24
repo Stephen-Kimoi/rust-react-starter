@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "rust_react_starter_kit_backend": {
+      "candid": "src/rust_react_starter_kit_backend/rust_react_starter_kit_backend.did",
+      "package": "rust_react_starter_kit_backend",
+      "type": "rust"
+    },
+    "rust_react_starter_kit_frontend": {
+      "dependencies": [
+        "rust_react_starter_kit_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/rust_react_starter_kit_frontend/src/index.html"
+      },
+      "source": [
+        "src/rust_react_starter_kit_frontend/assets",
+        "dist/rust_react_starter_kit_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
