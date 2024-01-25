@@ -1,20 +1,19 @@
 {
   "canisters": {
-    "rust_react_starter_kit_backend": {
-      "candid": "src/rust_react_starter_kit_backend/rust_react_starter_kit_backend.did",
-      "package": "rust_react_starter_kit_backend",
+    "counter": {
+      "candid": "backend/counter.did",
+      "package": "counter",
       "type": "rust"
     },
-    "rust_react_starter_kit_frontend": {
+    "frontend": {
       "dependencies": [
-        "rust_react_starter_kit_backend"
+        "counter"
       ],
       "frontend": {
-        "entrypoint": "src/rust_react_starter_kit_frontend/src/index.html"
+        "entrypoint": "dist/index.html"
       },
       "source": [
-        "src/rust_react_starter_kit_frontend/assets",
-        "dist/rust_react_starter_kit_frontend/"
+        "dist/"
       ],
       "type": "assets"
     }

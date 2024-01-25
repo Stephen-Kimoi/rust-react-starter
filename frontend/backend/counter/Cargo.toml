@@ -1,5 +1,5 @@
 [package]
-name = "rust_react_starter_kit_backend"
+name = "counter"
 version = "0.1.0"
 edition = "2021"
 
